@@ -20,7 +20,8 @@ class Channel:
         for item in videos:
             try:
                 video_id = item.replace('https://www.youtube.com/watch?v=','')
-                video = Video(video_id = video_id)
+                print(video_id)
+                video = Video(video_id)
                 self.videos.append(video)
             except Exception as e:
                 print(e)

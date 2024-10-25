@@ -1,12 +1,12 @@
-ARCHIVE_TXT_URL_FILES_DIR = 'c:/Users/Aluno/Documents/MetodoDatasetLibrasYouTube/MetodoDatasetLibrasYouTube/src/'
+ARCHIVE_TXT_URL_FILES_DIR = 'c:/Users/Aluno/Documents/Libras/MudancasDatasetLibrasYouTube/src/'
 INPUT_URL_TXT = "urls_input"
 
-BASE_PATH = "c:/Users/Aluno/Documents/MetodoDatasetLibrasYouTube/MetodoDatasetLibrasYouTube"
+BASE_PATH = "c:/Users/Aluno/Documents/Libras/MudancasDatasetLibrasYouTube/temporary_files"
 PARTIAL_DOWNLOADS_PATH = BASE_PATH + "/partial_video_downloads"
 FRAMES_PATH = BASE_PATH + '/frames'
 
 PROCESSED_IMAGES_PATH = BASE_PATH + "/processed_images"
-PROCESSED_IMAGES_ZIP_PATH = "/home/kolodadev/Estudos/processed_zip"
+PROCESSED_IMAGES_ZIP_PATH = "c:/Users/Aluno/Documents/Libras/MudancasDatasetLibrasYouTube/processed_zip"
 FACE_RECOGNITION_DIR = 'face_recognition'
 YOLO_DIR = 'yolo'
 FACES_NEGATIVE_DIR = 'negative'

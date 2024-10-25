@@ -69,7 +69,7 @@ if __name__ == '__main__':
             except OSError:
                 os.remove(path)
 
-        videos_download = Channel(channel_id).get_videos_id_from_download()
+        videos_download = Channel(channel_id).get_videos_ids()
         VideosResultsDB().persist_videos_afirmative(videos_download)
 
 

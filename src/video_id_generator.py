@@ -3,6 +3,7 @@ from channel import Channel as chn
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pytube.exceptions import PytubeError
 from constants import MAX_WORKERS
+from video import Video
 
 
 def get_video_ids():
@@ -10,7 +11,10 @@ def get_video_ids():
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         tasks = {executor.submit(_get_video_ids, channel_url): channel_url for channel_url in channel_ids}
         for task in as_completed(tasks):
+            if task is not None:
+                print(task)
             pass
+            
 
 
 def _get_video_ids(channel_id):
@@ -29,4 +33,4 @@ def _get_video_ids(channel_id):
         
     except PytubeError as err:
         print(err)
-        get_video_url(channel_url)
+        chn.get_videos_ids(chn.channel_id)
